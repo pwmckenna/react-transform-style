@@ -1,4 +1,4 @@
-# react-transform-style
+### react-transform-style
 
 This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transform) that makes React components support `className` and `style` props, even if they don't explicity apply them to the outermost element in their `render` function.
 
@@ -75,4 +75,4 @@ still generates the following (same as above)
 ### Caveats 
 
 - This will style the outermost element returned by your component's render function. Styling something deeper in the tree is not supported (and probably much harder) using this transform.
-- `style` props are combined, with the passed in `style` prop taking precendence. This makes it easier to override the default styling, but there's no way to guarentee your components style won't be overrided.
+- `style` props are combined, with the passed in `style` prop taking precendence. This makes it easier to override the default styling, but there's no way to guarentee your components style won't be overridden.
