@@ -15,7 +15,9 @@
   },
   "keywords": [
     "react-transform",
-    "example"
+    "classNames",
+    "className",
+    "style",
   ],
   "repository": {
     "type": "git",
