@@ -6,6 +6,26 @@ This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transf
 
 Without this, you'd need to make each React component explicity consume `className` and `style`. With this transform it is unnecessary (though this transform will play nicely with components that already do something like this).
 
+##### __*With*__ react-transform-style
+
+```js
+import React, { Component } from 'react';
+
+class HelloWorld extends Component {
+  render() {
+    return <div className="hello-world">Hello World</div>;
+  }
+}
+```
+
+```js
+<HelloWorld className="custom-class" style={{ color: 'red' }}/>
+```
+renders to the following
+```js
+<div style="color:red;" class="hello-world">Hello World</div>
+```
+
 ##### __*Without*__ react-transform-style
 
 ```js
@@ -21,26 +41,6 @@ class HelloWorld extends Component {
         Hello World
       </div>
     );
-  }
-}
-```
-
-```js
-<HelloWorld className="custom-class" style={{ color: 'red' }}/>
-```
-renders to the following
-```js
-<div style="color:red;" class="hello-world">Hello World</div>
-```
-
-##### __*With*__ react-transform-style
-
-```js
-import React, { Component } from 'react';
-
-class HelloWorld extends Component {
-  render() {
-    return <div className="hello-world">Hello World</div>;
   }
 }
 ```
