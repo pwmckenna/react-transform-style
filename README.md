@@ -18,7 +18,7 @@ This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transf
 
 ### Usage
 
-There's no point in using this transform. It doesn't do anything! That being said, you can use it by updating your `.babelrc` file to look like the following.
+There's no point in using this transform. It doesn't do anything! That being said, you can use it by updating your `.babelrc` file to look like the following. Your much fancier transform will also require something like this.
 
 ```js
 {
