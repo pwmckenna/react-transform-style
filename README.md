@@ -74,5 +74,5 @@ still generates the following (same as above)
 
 ### Caveats 
 
-- This will style the outermost element returned by your components render function. Styling something deeper in the tree is not supported (and probably much harder) using this transform.
+- This will style the outermost element returned by your component's render function. Styling something deeper in the tree is not supported (and probably much harder) using this transform.
 - `style` props are combined, with the passed in `style` prop taking precendence. This makes it easier to override the default styling, but there's no way to guarentee your components style won't be overrided.
