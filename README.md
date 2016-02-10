@@ -1,4 +1,4 @@
-### react-transform-style
+## react-transform-style
 
 This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transform) that makes React components support `className` and `style` props, even if they don't explicity apply them to the outermost element in their `render` function.
 
