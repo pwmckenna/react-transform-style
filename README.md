@@ -1,24 +1,18 @@
-# react-transform-noop
+# react-transform-style
 
-This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transform) that does nothing! Its just a starter kit showing how to write/test/publish a react-transform.
+This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transform) that makes React components support `className` and `style` props, even if they don't explicity apply them to the outermost element in their `render` function.
 
-### Features
+### Example
 
-- Builds with babel 6 using the es2015 and react presets. (`npm compile`)
-- Tests with mocha (`npm test`)
+Without this, you'd need to make each React component explicity consume `className` and `style`. With this transform its unnecessary (though you don't need to change your components that already do something like this).
 
-### Getting Started
+##### Before
 
-- `git clone git@github.com:pwmckenna/react-transform-noop.git`
-- `npm install`
-- edit [src/index.js](https://github.com/pwmckenna/react-transform-noop/blob/master/src/index.js#L2) to do something.
-- edit [test/index.js](https://github.com/pwmckenna/react-transform-noop/blob/master/test/index.js) to test your changes.
-- `npm test`
-- Tests pass? [change name + other package info](https://github.com/pwmckenna/react-transform-noop/blob/master/package.json#L2) + `npm publish`
+##### After
 
 ### Usage
 
-There's no point in using this transform. It doesn't do anything! That being said, you can use it by updating your `.babelrc` file to look like the following. Your much fancier transform will also require something like this.
+> .babelrc
 
 ```js
 {
@@ -28,7 +22,7 @@ There's no point in using this transform. It doesn't do anything! That being sai
   "plugins": [
     ["react-transform", {
       "transforms": [{
-        "transform": "react-transform-noop"
+        "transform": "react-transform-style"
       }]
     }]
   ]

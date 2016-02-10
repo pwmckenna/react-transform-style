@@ -1,5 +1,24 @@
+import classNames from 'classnames/dedupe';
+
 module.exports = () => ReactClass => {
   const ModifiedReactClass = ReactClass;
-  ModifiedReactClass.__react_transform_noop = true;
+  const render = ModifiedReactClass.prototype.render;
+  ModifiedReactClass.prototype.render = function () {
+    const {
+      props,
+      ...renderedRest
+    } = render.apply(this, arguments);
+    return {
+      props: {
+        ...props,
+        className: classNames(this.props.className, props.className),
+        style: {
+          ...props.style,
+          ...this.props.style
+        }
+      },
+      ...renderedRest
+    };
+  }
   return ModifiedReactClass;
 };

@@ -1,5 +1,5 @@
 {
-  "name": "react-transform-noop",
+  "name": "react-transform-style",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -19,17 +19,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pwmckenna/react-transform-noop.git"
+    "url": "git+https://github.com/pwmckenna/react-transform-style.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pwmckenna/react-transform-noop/issues"
+    "url": "https://github.com/pwmckenna/react-transform-style/issues"
   },
-  "homepage": "https://github.com/pwmckenna/react-transform-noop#readme",
+  "homepage": "https://github.com/pwmckenna/react-transform-style#readme",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-plugin-react-transform": "^2.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.5.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "eslint": "^1.10.3",
@@ -39,5 +40,8 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "rimraf": "^2.5.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.3"
   }
 }
