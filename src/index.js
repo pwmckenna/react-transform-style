@@ -1,6 +1,6 @@
 import classNames from 'classnames/dedupe';
 
-module.exports = () => ReactClass => {
+export default () => ReactClass => {
   const ModifiedReactClass = ReactClass;
   const render = ModifiedReactClass.prototype.render;
   ModifiedReactClass.prototype.render = function () {

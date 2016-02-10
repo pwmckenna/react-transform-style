@@ -29,6 +29,7 @@
   "homepage": "https://github.com/pwmckenna/react-transform-style#readme",
   "devDependencies": {
     "babel-cli": "^6.5.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
     "babel-plugin-react-transform": "^2.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.5.0",
     "babel-preset-es2015": "^6.5.0",
