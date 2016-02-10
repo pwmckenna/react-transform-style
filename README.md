@@ -1,10 +1,13 @@
-## react-transform-style
+# react-transform-style
 
+### What?
 This is a [react-transform](https://github.com/gaearon/babel-plugin-react-transform) that makes React components support `className` and `style` props, even if they don't explicity apply them to the outermost element in their `render` function.
 
-### Example
+### Why?
 
-Without this, you'd need to make each React component explicity consume `className` and `style`. With this transform it is unnecessary (though this transform will play nicely with components that already do something like this).
+Without this, you'd need to make each React component explicity consume `className` and `style` and apply them to the outermost component. With this transform it is unnecessary (though this transform will play nicely with components that already do something like this).
+
+### Example
 
 ##### __*With*__ react-transform-style
 
