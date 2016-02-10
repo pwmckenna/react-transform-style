@@ -21,7 +21,7 @@ class HelloWorld extends Component {
 ```js
 <HelloWorld className="custom-class" style={{ color: 'red' }}/>
 ```
-renders to the following
+generates the following
 ```js
 <div style="color:red;" class="hello-world">Hello World</div>
 ```
@@ -48,7 +48,7 @@ class HelloWorld extends Component {
 ```js
 <HelloWorld className="custom-class" style={{ color: 'red' }}/>
 ```
-still renders to the following (same as above)
+still generates the following (same as above)
 ```js
 <div style="color:red;" class="hello-world">Hello World</div>
 ```
