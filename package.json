@@ -1,7 +1,7 @@
 {
   "name": "react-transform-style",
   "version": "1.0.1",
-  "description": "",
+  "description": "React Transform adding support for `className` and `style` props on all components",
   "main": "lib/index.js",
   "files": [
     "lib"
