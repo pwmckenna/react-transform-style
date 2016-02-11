@@ -26,7 +26,7 @@ class HelloWorld extends Component {
 ```
 generates the following
 ```js
-<div style="color:red;" class="hello-world">Hello World</div>
+<div style="color:red;" class="custom-class hello-world">Hello World</div>
 ```
 
 ##### __*Without*__ react-transform-style
@@ -53,7 +53,7 @@ class HelloWorld extends Component {
 ```
 still generates the following (same as above)
 ```js
-<div style="color:red;" class="hello-world">Hello World</div>
+<div style="color:red;" class="custom-class hello-world">Hello World</div>
 ```
 
 ### Usage
@@ -75,7 +75,7 @@ still generates the following (same as above)
 }
 ```
 
-### Caveats 
+### Caveats
 
 - This will style the outermost element returned by your component's render function. Styling something deeper in the tree is not supported (and probably much harder) using this transform.
 - `style` props are combined, with the passed in `style` prop taking precendence. This makes it easier to override the default styling, but there's no way to guarentee your components style won't be overridden.
